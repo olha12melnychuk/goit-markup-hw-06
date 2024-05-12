@@ -310,5 +310,95 @@ hero-styles
 ======================================================================================================================================================== */
 
 .section-hero {
-  background-image: url('../images/');
+  max-width: 320px;
+  height: 432px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #2e2f42;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)), url('../images/background_mobile.jpg.jpg');
+  background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@media screen and (max-width: 767px) and (min-resolution: 192dpi) {
+    .section-hero {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)), url(../images/background_mobile.jpg@2x.jpg);
+    }
+}
+
+.header {
+  width: 216px;
+  height: 100%;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 496px;
+  margin-bottom: 72px;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  padding-top: 72px;
+}
+
+.btn {
+  display: block;
+  margin: 0 auto;
+  min-width: 169px;
+  height:  56px;
+  padding: 16px 32px;
+  background-color: #4D5AE5;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (min-width: 768px) {
+  .section-hero {
+    max-width: 768px;
+    height: 436px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero_tablet.jpg');
+  }
+
+    .header {
+      width: 496px;
+      font-size: 56px;
+      margin: 0 auto;
+      margin-bottom: 36px;
+      padding-top: 112px;
+      line-height: 1.07;      
+      letter-spacing: 0.02em;
+      text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .section-hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)), url(../images/hero_tablet@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .section-hero {
+    max-width: 1440px;
+    height: 600px;
+      margin-right: auto;
+      margin-left: auto;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)), url(../images/bg_desctop.jpg);
+  }
+
+    .header {
+      padding-top: 188px;
+      margin-bottom: 48px;
+    }
 }
