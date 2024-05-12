@@ -291,6 +291,10 @@ mobile-menu-styles
   gap: 40px;
 }
 
+.mobile-click-link {
+  display: flex;
+}
+
 .mobile-link-list-item {
   width: 40px;
     height: 40px;
