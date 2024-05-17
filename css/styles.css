@@ -239,10 +239,20 @@ mobile-menu-styles
 
 .burger-menu-container {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-top: 72px;
+  padding-bottom: 40px;
 }
 
 .burger-button {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
   top: 24px;
   right: 24px;
   border-radius: 50%;
@@ -251,8 +261,7 @@ mobile-menu-styles
 }
 
 .burger-nav {
-  padding-top: 72px;
-  margin-bottom: 168px;
+  margin-bottom: auto;
 }
 
 .burger-menu-list {
@@ -264,10 +273,15 @@ mobile-menu-styles
 
 .burger-menu-item {
   font-size: 36px;
+  font-weight: 700;
   line-height: 1.11;
   letter-spacing: 0.02em;
-  color: #2E2F42;
+  color: rgba(46, 47, 66, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.first-list-item {
+  color: rgba(64, 75, 191, 1);
 }
 
 .burger-menu-item:hover,
@@ -277,6 +291,7 @@ mobile-menu-styles
 
 .contacts-mobile-menu {
   display: flex;
+  margin-bottom: 48px;
 }
 
 .mobile-address-list {
@@ -286,9 +301,13 @@ mobile-menu-styles
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  letter-spacing: 0/02em;
+  letter-spacing: 0.02em;
   line-height: 1.2;
-  margin-bottom: 48px;
+  
+}
+
+.tel-style {
+  color: rgba(77, 90, 229, 1);
 }
 
 .mobile-link-list {
@@ -313,6 +332,13 @@ mobile-menu-styles
 
 .mobile-icon-img {
   fill: #f4f4fd;
+}
+
+@media screen and (min-width: 768px) {
+  .burger-menu {
+    display: none;
+  }
+
 }
 
 /* ========================================================================================================================================================
@@ -975,7 +1001,7 @@ modal form styles
   border-radius: 4px;
   width: 288px;
   min-height: 623px;
-  padding: 72px 24px 24px 24px;
+  padding: 72px 16px 24px 16px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1110,6 +1136,8 @@ modal form styles
 }
 
 .checkbox-label {
+  display: flex;
+  align-items: center;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -1127,6 +1155,7 @@ modal form styles
 
 .own-checkbox {
   display: inline-flex;
+  flex-shrink: 0;
   justify-content: center;
   align-items: center;
   width: 16px;
@@ -1177,6 +1206,7 @@ modal form styles
   .modal {
     width: 408px;
     min-height: 584px;
+    padding: 72px 24px 24px 24px;
   }
 
 }
